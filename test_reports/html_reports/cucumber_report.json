@@ -1,0 +1,110 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Apply for JOBs in linkedin",
+    "line": 1,
+    "id": "apply-for-jobs-in-linkedin",
+    "tags": [],
+    "uri": "test_scenarios\\feature_files\\angel-applyjob.feature",
+    "elements": [
+      {
+        "id": "apply-for-jobs-in-linkedin;apply-for-job-for-bengaluru",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Apply for job for Bengaluru",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "I am on home page",
+            "match": {
+              "location": "test_scenarios\\step_definitions\\angel-jobapply-stepdef.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29496000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I login",
+            "match": {
+              "location": "test_scenarios\\step_definitions\\angel-jobapply-stepdef.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14561000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I go to job search page",
+            "match": {
+              "location": "test_scenarios\\step_definitions\\angel-jobapply-stepdef.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6842000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I search job",
+            "match": {
+              "location": "test_scenarios\\step_definitions\\angel-jobapply-stepdef.js:38"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5000000,
+              "error_message": "TypeError: browser.actiions is not a function\n    at Object.enterSearchKeyword (C:\\LEARN\\AUTOMATION\\PROTRACTOR\\ANGEL.CO\\page_objects\\job-page-angel.js:47:17)\n    at World.<anonymous> (C:\\LEARN\\AUTOMATION\\PROTRACTOR\\ANGEL.CO\\test_scenarios\\step_definitions\\angel-jobapply-stepdef.js:41:33)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I filter the jobs",
+            "match": {
+              "location": "test_scenarios\\step_definitions\\angel-jobapply-stepdef.js:47"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I apply for all relevent jobs.",
+            "match": {
+              "location": "test_scenarios\\step_definitions\\angel-jobapply-stepdef.js:55"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
