@@ -25,7 +25,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 29496000000
+              "duration": 25630000000
             }
           },
           {
@@ -38,7 +38,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14561000000
+              "duration": 17143000000
             }
           },
           {
@@ -51,7 +51,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6842000000
+              "duration": 11356000000
             }
           },
           {
@@ -63,9 +63,8 @@
               "location": "test_scenarios\\step_definitions\\angel-jobapply-stepdef.js:38"
             },
             "result": {
-              "status": "failed",
-              "duration": 5000000,
-              "error_message": "TypeError: browser.actiions is not a function\n    at Object.enterSearchKeyword (C:\\LEARN\\AUTOMATION\\PROTRACTOR\\ANGEL.CO\\page_objects\\job-page-angel.js:47:17)\n    at World.<anonymous> (C:\\LEARN\\AUTOMATION\\PROTRACTOR\\ANGEL.CO\\test_scenarios\\step_definitions\\angel-jobapply-stepdef.js:41:33)"
+              "status": "passed",
+              "duration": 62101000000
             }
           },
           {
@@ -77,7 +76,8 @@
               "location": "test_scenarios\\step_definitions\\angel-jobapply-stepdef.js:47"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 10345000000
             }
           },
           {
@@ -89,7 +89,8 @@
               "location": "test_scenarios\\step_definitions\\angel-jobapply-stepdef.js:55"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1657000000
             }
           },
           {
@@ -100,7 +101,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 3000000
             }
           }
         ]

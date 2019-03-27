@@ -21,36 +21,39 @@ exports.jobpageangel ={
 
     goToJobPage : function () {
             commonlib.protractor_common.check_click(this.job_tab,20);
-            commonlib.protractor_common.pause(3000);
+            commonlib.protractor_common.pause(7000);
     },
 
     deleteExistingFilters : function () {
         var allCrossIcons = element.all(by.xpath("//div[contains(@class,'new_taggings tag_edit')]/img"));
         allCrossIcons.count().then(function (noOfCross) {
-            for(var i=0;i<noOfCross;I++)
+            for(var i=noOfCross-1;i>=0;i--)
             {
                 var thisCross = allCrossIcons.get(i);
-                var isCrossPresent = thisCross.isPresent().then(function (isPrsent) {
+                var isCrossPresent = thisCross.isDisplayed().then(function (isPrsent) {
                     return isPrsent;
                 });
-                if(isCrossPresent)
+                console.log("Value of isCrossPresent "+isCrossPresent);
+                if(isCrossPresent.then())
                 {
                     commonlib.protractor_common.check_click(thisCross,20);
-                    commonlib.protractor_common.pause(5000);
+                    commonlib.protractor_common.pause(10000);
                 }
             }
         })
     },
 
     enterSearchKeyword : function () {
+        commonlib.protractor_common.check_click(this.searchBox,20);
+        commonlib.protractor_common.pause(2000);
         commonlib.protractor_common.check_enter_text(this.search_keyword_field,search_keyword,20);
-        browser.actiions().sendKeys(protractor.Key.ENTER).perform();
-        commonlib.protractor_common.pause(5000);
+        browser.actions().sendKeys(protractor.Key.ENTER).perform();
+        commonlib.protractor_common.pause(7000);
     },
 
     applyLocationFilter : function () {
       browser.actions().mouseMove(this.location_filter).mouseMove(this.remote_ok_filter).click().perform();
-      commonlib.protractor_common.pause(5000);
+      commonlib.protractor_common.pause(10000);
     },
 
     applyForReleventJobs : function () {

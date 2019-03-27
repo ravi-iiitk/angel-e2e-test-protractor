@@ -27,7 +27,7 @@ exports.loginpage ={
       browser.get(desiredURL).then(function () {
           browser.sleep(5000);
           browser.driver.manage().window().maximize();
-          browser.sleep(5000);
+          browser.sleep(7000);
       });
   }
 };
